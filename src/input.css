@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2{
+    @apply ubuntu-regular xl:text-5xl md:text-4xl text-3xl;
+}
+
+h3{
+    @apply ubuntu-medium  text-2xl;
+}
+
+p{
+    @apply ubuntu-light xl:text-lg  text-base  ;
+}
+
+a{
+    @apply ubuntu-medium  xl:text-lg text-base ;
+}
+
+#Navegation-bar nav ul li {
+    @apply hover:border-b-2 hover:border-orange-500 hover:shadow-[0_4px_4px_-2px_rgba(0,0,0,0.3)]  hover:shadow-orange-500 transition duration-300 ease-in-out;
+}
+
